@@ -9,4 +9,4 @@
 
 
 # command to provision the resources
-terrform apply --var-file=./configuration/dev/czr-daas-ec2-usw2-dev.tfvars
+terrform apply --var-file=./configuration/dev.tfvars
