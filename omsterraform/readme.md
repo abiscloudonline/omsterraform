@@ -6,6 +6,7 @@
 * omsterraform/modules/publicnetwork/vpc.tf - this is to provision the public network
 * omsterraform/modules/publicnetwork/variables.tf - contains the details of variables used in vpc.tf
 * omsterraform/modules/apigateway/apigateway.tf - this is to provision the Rest API Gateway
+* omsterraform/modules/apigateway/variables.tf - contains the details of variables used in apigateway.tf
 * omsterraform/modules/apigateway/policy.tf - Contains the Sample Policy to invoke lambda
 * omsterraform/modules/cognito/coginto.tf - This is to provision the cognito user, resource, client pool
 * omsterraform/modules/cognito/variables.tf - contains the details of variables used in cognito.tf
