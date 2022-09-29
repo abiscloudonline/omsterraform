@@ -1,0 +1,32 @@
+The Terraform script involves the creation of the following resources.
+	Creation of VPC
+	creation of public subnet in VPC
+	creation of private subnet in VPC
+	creation of internet gateway for VPC
+	creation of public route table for public subnet
+	associate public route table with internet gateway
+	associate public subnet with public route table
+	creation of private route table for private subnet
+	associate private subnet with private route table
+	create elastic IP for NAT Gateway
+	creation of NAT Gateway
+	associate private route table with NAT gateway
+	creation of public security group for public subnet
+	creation of private security group for private subnet
+	creation of public instance
+	creation of private instance
+	creating vpc endpoint to access cloudwatch logs
+	associating private route table with endpoint to enable the access of cloudwatch in private subnet
+	creation of virtual private gateway for AWS Side
+	integeration of virtual private gateway with private route table
+	creation of customer gateway for Onprem Side
+	Enabling vpn gateway by integerating virtual private gateway & customer gateway.
+steps to execute the terraform script.
+Place the files in the directory where terraform is intalled.
+Then run the below commands to provision the infrastructure using Terraform
+	./terraform init
+	./terraform plan
+	./terraform apply
+	./terraform destroy
+
+
