@@ -11,6 +11,8 @@
 * omsterraform/modules/cognito/coginto.tf - This is to provision the cognito user, resource, client pool
 * omsterraform/modules/cognito/variables.tf - contains the details of variables used in cognito.tf
 * omsterraform/modules/sts/sts.tf - This is to access ec2 instance from another AWS account using STS
+* omsterraform/modules/vpcendpoint/vpcendpoints3.tf - This is to provision the VPC endpoint for s3
+* omsterraform/modules/vpcendpoint/variables.tf - contains the details of variables used in vpcendpoints3.tf
 * omsterraform/configuration/vars.tf - to provision aws services in various envronments like dev, pre-prod, prod 
 
 
