@@ -167,21 +167,21 @@ resource "aws_vpc_endpoint_route_table_association" "endptassociation" {  # asso
 }
 
 
-resource "aws_vpn_gateway" "vpn_gateway"{              #creation of virtual private gateway for AWS Side
-  vpc_id = aws_vpc.main.id
-}
-resource "aws_vpn_gateway_route_propagation" "main" {  #integeration of virtual private gateway with private route table
-  vpn_gateway_id = aws_vpn_gateway.vpn_gateway.id
-  route_table_id = aws_route_table.pri-table.id
-}
-resource "aws_customer_gateway" "customer_gateway" { #creation of customer gateway for Onprem Side
-  bgp_asn    = "${var.bgpval}"
-  ip_address = "${var.custip_addr}"   #  replace with your CGW IP address from network guy of on prem
-  type       = "${var.custip_type}"
-}
-resource "aws_vpn_connection" "main" {                     # Enabling vpn gateway by integerating virtual private gateway & customer gateway
-  vpn_gateway_id      = aws_vpn_gateway.vpn_gateway.id
-  customer_gateway_id = aws_customer_gateway.customer_gateway.id
-  type                = "${var.custip_type}"
-  static_routes_only  = true
-}
+#resource "aws_vpn_gateway" "vpn_gateway"{              #creation of virtual private gateway for AWS Side
+ # vpc_id = aws_vpc.main.id
+#}
+#resource "aws_vpn_gateway_route_propagation" "main" {  #integeration of virtual private gateway with private route table
+ # vpn_gateway_id = aws_vpn_gateway.vpn_gateway.id
+  #route_table_id = aws_route_table.pri-table.id
+#}
+#resource "aws_customer_gateway" "customer_gateway" { #creation of customer gateway for Onprem Side
+ # bgp_asn    = "${var.bgpval}"
+  #ip_address = "${var.custip_addr}"   #  replace with your CGW IP address from network guy of on prem
+  #type       = "${var.custip_type}"
+#}
+#resource "aws_vpn_connection" "main" {                     # Enabling vpn gateway by integerating virtual private gateway & customer gateway
+ # vpn_gateway_id      = aws_vpn_gateway.vpn_gateway.id
+  #customer_gateway_id = aws_customer_gateway.customer_gateway.id
+  #type                = "${var.custip_type}"
+  #static_routes_only  = true
+#}
