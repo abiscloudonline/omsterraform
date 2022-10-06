@@ -46,7 +46,7 @@ resource "aws_transfer_user" "TransferUser" {       # creating sftp user
   home_directory_type = "LOGICAL"
   home_directory_mappings {
     entry  = "/"
-    target = "/${"${var.bucket}".id}/$${ReceivedFiles}"
+    target = "/${aws_s3_bucket.Transferbucket.id}/$${ReceivedFiles}"
   }
 
   tags = {
