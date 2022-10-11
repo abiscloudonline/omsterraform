@@ -13,10 +13,10 @@
 * omsterraform/modules/sts/sts.tf - This is to access ec2 instance from another AWS account using STS
 * omsterraform/modules/vpcendpoint/vpcendpoints3.tf - This is to provision the VPC endpoint for s3
 * omsterraform/modules/vpcendpoint/variables.tf - contains the details of variables used in vpcendpoints3.tf
-* omsterraform/modules/servicecatalog/service_catalog_vpc.tf - This is to provision the VPC endpoint for s3
-* omsterraform/modules/servicecatalog/service_catalog_ecsrole.tf - This is to provision the VPC endpoint for s3
-* omsterraform/modules/servicecatalog/service_catalog_portfolio.tf - This is to provision the VPC endpoint for s3
-* omsterraform/modules/servicecatalog/variables.tf - contains the details of variables used in service_catalog_vpc.tf,service_catalog_ecsrole.tf,service_catalog_portfolio.tf
+* omsterraform/modules/awsservicecatalog/service_catalog_vpc.tf - This is to provision the VPC endpoint for s3
+* omsterraform/modules/awsservicecatalog/service_catalog_ecsrole.tf - This is to provision the VPC endpoint for s3
+* omsterraform/modules/awsservicecatalog/service_catalog_portfolio.tf - This is to provision the VPC endpoint for s3
+* omsterraform/modules/awsservicecatalog/variables.tf - contains the details of variables used in service_catalog_vpc.tf,service_catalog_ecsrole.tf,service_catalog_portfolio.tf
 * omsterraform/configuration/vars.tf - to provision aws services in various envronments like dev, pre-prod, prod 
 
 
